@@ -9,7 +9,7 @@
     <!-- SEO Primario -->
     <title>Agentes IA y Automatización RPA en Colombia | DCM System</title>
     <meta name="description"
-        content="Automatiza tu empresa con IA. +20 años. Agentes inteligentes, RPA con n8n, desarrollo software y soluciones enterprise en Colombia. ¡Solicita diagnóstico gratis!">
+        content="Automatiza tu empresa con IA. +12 años. Agentes inteligentes, RPA con n8n, desarrollo software y soluciones enterprise en Colombia. ¡Solicita diagnóstico gratis!">
     <meta name="keywords"
         content="DCM System, agentes inteligentes IA, automatización RPA Colombia, desarrollo software Barranquilla, transformación digital empresas, inteligencia artificial industrial, n8n automatización, smart cities Colombia, IoT RFID BLE, software mantenimiento industrial, chatbot empresarial, seguridad ciudadana CCTV IA">
     <meta name="author" content="DCM System SAS">
@@ -46,7 +46,7 @@
     <meta property="og:url" content="https://dcmsystem.co/">
     <meta property="og:title" content="Agentes IA y Automatización para tu Empresa | DCM System">
     <meta property="og:description"
-        content="Automatiza el 80% de tus procesos con IA. Agentes inteligentes 24/7, RPA con n8n y software a medida. +20 años. +150 proyectos en Colombia y Canadá.">
+        content="Automatiza el 80% de tus procesos con IA. Agentes inteligentes 24/7, RPA con n8n y software a medida. +12 años. +150 proyectos en Colombia y Canadá.">
     <meta property="og:image" content="https://dcmsystem.co/og-image.png">
     <meta property="og:image:secure_url" content="https://dcmsystem.co/og-image.png">
     <meta property="og:image:type" content="image/png">
@@ -62,7 +62,7 @@
     <meta name="twitter:creator" content="@dcmsystem">
     <meta name="twitter:title" content="Agentes IA y Automatización RPA | DCM System Colombia">
     <meta name="twitter:description"
-        content="Automatiza el 80% de tus procesos. Agentes IA 24/7, n8n RPA, software enterprise. +20 años en Colombia.">
+        content="Automatiza el 80% de tus procesos. Agentes IA 24/7, n8n RPA, software enterprise. +12 años en Colombia.">
     <meta name="twitter:image" content="https://dcmsystem.co/og-image.png">
     <meta name="twitter:image:alt" content="DCM System — Transformación Digital en Colombia">
 
@@ -85,8 +85,8 @@
           "height": 512
         },
         "image": "https://dcmsystem.co/og-image.png",
-        "description": "Empresa B2B de tecnología con más de 20 años en Barranquilla, Colombia. Desarrollamos Agentes IA, automatización RPA, software industrial y soluciones enterprise para Utilities, Energía, Salud, Industria y Smart Cities.",
-        "foundingDate": "2005",
+        "description": "Empresa B2B de tecnología con más de 12 años en Barranquilla, Colombia. Desarrollamos Agentes IA, automatización RPA, software industrial y soluciones enterprise para Utilities, Energía, Salud, Industria y Smart Cities.",
+        "foundingDate": "2014",
         "numberOfEmployees": {"@type": "QuantitativeValue", "value": 20},
         "areaServed": ["Colombia", "Latinoamérica", "Canadá"],
         "address": {
@@ -158,7 +158,7 @@
           {
             "@type": "Question",
             "name": "¿Cuántos años de experiencia tiene DCM System?",
-            "acceptedAnswer": {"@type": "Answer", "text": "DCM System tiene más de 20 años de experiencia desde 2005, con más de 150 proyectos entregados y más de 50 clientes activos en múltiples industrias."}
+            "acceptedAnswer": {"@type": "Answer", "text": "DCM System tiene más de 12 años de experiencia desde 2014, con más de 150 proyectos entregados y más de 50 clientes activos en múltiples industrias."}
           },
           {
             "@type": "Question",
@@ -197,12 +197,61 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
         rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Font Awesome — non-blocking -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </noscript>
+
+    <!-- Loading screen — inline critical CSS to show immediately -->
+    <style>
+        #page-loader {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: #0a0e1a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            transition: opacity 0.35s ease;
+        }
+        #page-loader.loaded { opacity: 0; pointer-events: none; }
+        #page-loader .loader-logo {
+            width: 56px;
+            height: 56px;
+            animation: loaderPulse 1.2s ease-in-out infinite;
+        }
+        #page-loader .loader-bar {
+            width: 160px;
+            height: 3px;
+            background: rgba(56,189,248,0.15);
+            border-radius: 99px;
+            overflow: hidden;
+        }
+        #page-loader .loader-bar-fill {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            border-radius: 99px;
+            animation: loaderFill 0.9s cubic-bezier(0.4,0,0.2,1) forwards;
+        }
+        @keyframes loaderPulse { 0%,100%{opacity:.5;transform:scale(.95)} 50%{opacity:1;transform:scale(1)} }
+        @keyframes loaderFill { to { width: 100%; } }
+    </style>
 </head>
 
 <body>
+    <!-- Loading Screen -->
+    <div id="page-loader" aria-hidden="true">
+        <img src="/dcm-icon.png" alt="DCM System" class="loader-logo" width="56" height="56">
+        <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+
     <!-- ========== PARTICLES CANVAS ========== -->
     <canvas id="particles"></canvas>
 
@@ -262,7 +311,7 @@
                         <span class="gradient-text shine-effect" data-i18n="hero.line2">Operaciones Críticas</span>
                     </h1>
                     <p class="hero-subtitle hero-fade-up" data-i18n="hero.subtitle">
-                        Más de 20 años construyendo tecnología que genera resultados reales: Agentes Autónomos IA, automatización RPA con n8n e integraciones profundas a tu ERP. Escala la rentabilidad de tu empresa.
+                        Más de 12 años construyendo tecnología que genera resultados reales: Agentes Autónomos IA, automatización RPA con n8n e integraciones profundas a tu ERP. Escala la rentabilidad de tu empresa.
                     </p>
                     <div class="hero-actions hero-fade-up">
                         <a href="#servicios" class="btn-primary">
@@ -901,7 +950,7 @@
                 <div class="footer-grid">
                     <div class="footer-brand">
                         <img src="/dcm-logo-white.png" alt="DCM System SAS — Barranquilla, Colombia" class="footer-logo" width="160" height="48" loading="lazy">
-                        <p data-i18n="footer.desc">Transformando la tecnología en un motor de crecimiento para empresas y ciudades inteligentes desde 2005.</p>
+                        <p data-i18n="footer.desc">Transformando la tecnología en un motor de crecimiento para empresas y ciudades inteligentes desde 2014.</p>
                     </div>
                     <div class="footer-links">
                         <h4 data-i18n="footer.nav">Navegación</h4>

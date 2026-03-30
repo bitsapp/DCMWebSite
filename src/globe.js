@@ -15,10 +15,9 @@ export function initGlobe() {
     // Real DCM project locations with labels
     const projects = [
         { lat: 10.9685, lng: -74.7813, name: 'DCM HQ', project: 'Sede Principal', color: '#f59e0b', size: 1.4 },
-        { lat: 4.6097, lng: -74.0817, name: 'Bogota', project: 'ID Digital / Carnet Digital', color: '#22c55e', size: 1.2 },
-        { lat: 25.7617, lng: -80.1918, name: 'Miami', project: 'Zutrix - Plataforma SEO', color: '#3b82f6', size: 1.0 },
-        { lat: 43.6510, lng: -79.3470, name: 'Toronto', project: 'Cannon - IA Industrial', color: '#ef4444', size: 1.0 },
-        { lat: 31.0461, lng: 34.8516, name: 'Israel', project: 'Zutrix - R&D Center', color: '#3b82f6', size: 1.0 },
+        { lat: 4.6097, lng: -74.0817, name: 'Bogotá', project: 'ID Digital / Carnet Digital', color: '#22c55e', size: 1.2 },
+        { lat: 4.7097, lng: -74.1817, name: 'Bogotá', project: 'ZUTRICS — PROCAPS Salud IA', color: '#10b981', size: 1.1 },
+        { lat: 36.1716, lng: -115.1391, name: 'Las Vegas', project: 'Cannon - IA Industrial', color: '#ef4444', size: 1.0 },
         { lat: 40.4168, lng: -3.7038, name: 'Madrid', project: 'Consultoria Enterprise', color: '#a855f7', size: 0.8 },
         { lat: 19.4326, lng: -99.1332, name: 'CDMX', project: 'Automatizacion RPA', color: '#0ea5e9', size: 0.8 },
         { lat: -23.5505, lng: -46.6333, name: 'Sao Paulo', project: 'Integracion ERP', color: '#0ea5e9', size: 0.8 },

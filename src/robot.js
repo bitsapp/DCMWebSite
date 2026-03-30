@@ -194,7 +194,7 @@ const ROBOT_SVG = `
 
 // ===================== SECTION CONTEXT =====================
 const sectionContext = {
-    hero: { expr: 'excited', es: 'Bienvenido! Soy el asistente de DCM System. Llevamos +20 anos transformando empresas. Quieres que te muestre algo?', en: 'Welcome! I\'m DCM System\'s assistant. 20+ years transforming businesses. Want me to show you something?',
+    hero: { expr: 'excited', es: 'Bienvenido! Soy el asistente de DCM System. Llevamos +12 años transformando empresas. Quieres que te muestre algo?', en: 'Welcome! I\'m DCM System\'s assistant. 12+ years transforming businesses. Want me to show you something?',
         opts: [{ es: 'Ver servicios', en: 'See services', act: 'scroll', to: '#servicios' }, { es: 'Agendar reunion', en: 'Book a meeting', act: 'url', to: 'https://cal.com/dcmsystem' }] },
     servicios: { expr: 'thinking', es: '10 soluciones enterprise: IA, agentes, RPA, desarrollo, seguridad... Cual te interesa?', en: '10 enterprise solutions: AI, agents, RPA, development, security... Which interests you?',
         opts: [{ es: 'IA y Agentes', en: 'AI & Agents', act: 'scroll', to: '#demo' }, { es: 'Quiero cotizar', en: 'Get a quote', act: 'scroll', to: '#contacto' }] },

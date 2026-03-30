@@ -8,7 +8,6 @@ import { initSecurity } from './security.js';
 import { initI18n } from './i18n.js';
 import { initNavigation } from './navigation.js';
 import { initParticles } from './particles.js';
-import { initGlobe } from './globe.js';
 import { initAnimations } from './animations.js';
 import { initServices } from './services.js';
 import { initCounters } from './counter.js';
@@ -24,11 +23,31 @@ document.addEventListener('DOMContentLoaded', () => {
     initI18n();
     initNavigation();
     initParticles();
-    initGlobe();
     initAnimations();
     initServices();
     initCounters();
     initTerminal();
     initContact();
     initRobot();
+
+    // Phase 3: Lazy load globe only on desktop when section is near viewport
+    if (window.innerWidth >= 768) {
+        const globeContainer = document.getElementById('globe-container');
+        if (globeContainer) {
+            const observer = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting) {
+                    observer.disconnect();
+                    import('./globe.js').then(m => m.initGlobe());
+                }
+            }, { rootMargin: '400px' });
+            observer.observe(globeContainer);
+        }
+    }
+
+    // Remove loading screen once DOM is ready
+    const loader = document.getElementById('page-loader');
+    if (loader) {
+        loader.classList.add('loaded');
+        setTimeout(() => loader.remove(), 400);
+    }
 });

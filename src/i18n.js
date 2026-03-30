@@ -15,7 +15,7 @@ const translations = {
         // Hero
         "hero.line1": "Agentes IA y Automatización para",
         "hero.line2": "Operaciones Críticas",
-        "hero.subtitle": "Más de 20 años construyendo tecnología que genera resultados reales: Agentes Autónomos IA, automatización RPA con n8n e integraciones profundas a tu ERP. Escala la rentabilidad de tu empresa.",
+        "hero.subtitle": "Más de 12 años construyendo tecnología que genera resultados reales: Agentes Autónomos IA, automatización RPA con n8n e integraciones profundas a tu ERP. Escala la rentabilidad de tu empresa.",
         "hero.cta": "Descubrir Soluciones",
         "hero.cta2": "Ver Demo en Vivo",
 
@@ -117,7 +117,7 @@ const translations = {
         "contact.location": "Ubicación",
 
         // Footer
-        "footer.desc": "Transformando la tecnología en un motor de crecimiento para empresas y ciudades inteligentes desde 2005.",
+        "footer.desc": "Transformando la tecnología en un motor de crecimiento para empresas y ciudades inteligentes desde 2014.",
         "footer.nav": "Navegación",
         "footer.platforms": "Plataformas",
         "footer.contact": "Contacto",
@@ -205,7 +205,7 @@ const translations = {
         // Hero
         "hero.line1": "AI Agents & Automation for",
         "hero.line2": "Mission-Critical Operations",
-        "hero.subtitle": "20+ years delivering technology that drives real results: Autonomous AI Agents, RPA automation with n8n, and deep ERP integrations. Scale your company's profitability.",
+        "hero.subtitle": "12+ years delivering technology that drives real results: Autonomous AI Agents, RPA automation with n8n, and deep ERP integrations. Scale your company's profitability.",
         "hero.cta": "Explore Solutions",
         "hero.cta2": "Watch Live Demo",
 
@@ -307,7 +307,7 @@ const translations = {
         "contact.location": "Location",
 
         // Footer
-        "footer.desc": "Turning technology into a growth engine for businesses and smart cities since 2005.",
+        "footer.desc": "Turning technology into a growth engine for businesses and smart cities since 2014.",
         "footer.nav": "Navigation",
         "footer.platforms": "Platforms",
         "footer.contact": "Contact",
