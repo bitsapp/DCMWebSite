@@ -596,7 +596,15 @@ function showContextChat(sectionId) {
             btn.className = 'robot-opt';
             btn.textContent = lang === 'en' ? o.en : o.es;
             btn.addEventListener('click', () => {
-                if (o.act === 'scroll') { document.querySelector(o.to)?.scrollIntoView({ behavior: 'smooth' }); setTimeout(toggleChat, 800); }
+                if (o.act === 'scroll') {
+                    const target = document.querySelector(o.to);
+                    if (target) {
+                        const offset = 110;
+                        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+                        window.scrollTo({ top, behavior: 'smooth' });
+                    }
+                    setTimeout(toggleChat, 800);
+                }
                 else if (o.act === 'url') { window.open(o.to, '_blank'); }
             });
             opts.appendChild(btn);
