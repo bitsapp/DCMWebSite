@@ -1,0 +1,92 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e1a"/>
+      <stop offset="100%" style="stop-color:#0f1f3d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="blur1">
+      <feGaussianBlur stdDeviation="60"/>
+    </filter>
+    <filter id="blur2">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Glow blobs -->
+  <circle cx="200" cy="150" r="200" fill="#3b82f6" opacity="0.12" filter="url(#blur1)"/>
+  <circle cx="1050" cy="480" r="180" fill="#60a5fa" opacity="0.10" filter="url(#blur1)"/>
+  <circle cx="600" cy="315" r="250" fill="#1d4ed8" opacity="0.08" filter="url(#blur2)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="210" x2="1200" y2="210" stroke="#3b82f6" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="0" y1="420" x2="1200" y2="420" stroke="#3b82f6" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="400" y1="0" x2="400" y2="630" stroke="#3b82f6" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="800" y1="0" x2="800" y2="630" stroke="#3b82f6" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- Top border accent -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Left decorative bar -->
+  <rect x="80" y="140" width="4" height="350" rx="2" fill="url(#accent)" opacity="0.6"/>
+
+  <!-- Badge -->
+  <rect x="108" y="140" width="220" height="34" rx="17" fill="#3b82f6" fill-opacity="0.15" stroke="#3b82f6" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="218" y="163" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#60a5fa" text-anchor="middle" letter-spacing="2">TECNOLOGÍA B2B · COLOMBIA</text>
+
+  <!-- Main title -->
+  <text x="108" y="240" font-family="Arial Black, Arial, sans-serif" font-size="72" font-weight="900" fill="white" letter-spacing="-1">DCM System</text>
+
+  <!-- Subtitle -->
+  <text x="108" y="305" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#94a3b8">Transformación Digital para</text>
+  <text x="108" y="355" font-family="Arial Black, Arial, sans-serif" font-size="36" font-weight="900" fill="url(#accent)">Operaciones Críticas</text>
+
+  <!-- Description -->
+  <text x="108" y="415" font-family="Arial, sans-serif" font-size="20" fill="#64748b">Más de 20 años · Agentes IA · Automatización RPA · Software Enterprise</text>
+
+  <!-- Stats row -->
+  <rect x="108" y="455" width="160" height="80" rx="12" fill="#3b82f6" fill-opacity="0.08" stroke="#3b82f6" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="188" y="490" font-family="Arial Black, Arial, sans-serif" font-size="28" font-weight="900" fill="white" text-anchor="middle">20+</text>
+  <text x="188" y="516" font-family="Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">Años</text>
+
+  <rect x="284" y="455" width="160" height="80" rx="12" fill="#3b82f6" fill-opacity="0.08" stroke="#3b82f6" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="364" y="490" font-family="Arial Black, Arial, sans-serif" font-size="28" font-weight="900" fill="white" text-anchor="middle">150+</text>
+  <text x="364" y="516" font-family="Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">Proyectos</text>
+
+  <rect x="460" y="455" width="160" height="80" rx="12" fill="#3b82f6" fill-opacity="0.08" stroke="#3b82f6" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="540" y="490" font-family="Arial Black, Arial, sans-serif" font-size="28" font-weight="900" fill="white" text-anchor="middle">50+</text>
+  <text x="540" y="516" font-family="Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">Clientes</text>
+
+  <rect x="636" y="455" width="160" height="80" rx="12" fill="#3b82f6" fill-opacity="0.08" stroke="#3b82f6" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="716" y="490" font-family="Arial Black, Arial, sans-serif" font-size="28" font-weight="900" fill="white" text-anchor="middle">8</text>
+  <text x="716" y="516" font-family="Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">Países</text>
+
+  <!-- Right side decoration — circuit nodes -->
+  <circle cx="950" cy="200" r="6" fill="#3b82f6" opacity="0.8"/>
+  <circle cx="1050" cy="280" r="4" fill="#60a5fa" opacity="0.6"/>
+  <circle cx="980" cy="350" r="5" fill="#3b82f6" opacity="0.7"/>
+  <circle cx="1080" cy="180" r="3" fill="#60a5fa" opacity="0.5"/>
+  <circle cx="920" cy="310" r="4" fill="#3b82f6" opacity="0.6"/>
+  <circle cx="1100" cy="360" r="6" fill="#60a5fa" opacity="0.5"/>
+  <line x1="950" y1="200" x2="1050" y2="280" stroke="#3b82f6" stroke-opacity="0.3" stroke-width="1"/>
+  <line x1="1050" y1="280" x2="980" y2="350" stroke="#3b82f6" stroke-opacity="0.3" stroke-width="1"/>
+  <line x1="950" y1="200" x2="1080" y2="180" stroke="#3b82f6" stroke-opacity="0.2" stroke-width="1"/>
+  <line x1="920" y1="310" x2="980" y2="350" stroke="#3b82f6" stroke-opacity="0.3" stroke-width="1"/>
+  <line x1="1080" y1="180" x2="1100" y2="360" stroke="#3b82f6" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- URL bottom right -->
+  <text x="1120" y="595" font-family="Arial, sans-serif" font-size="18" fill="#3b82f6" text-anchor="end" opacity="0.8">dcmsystem.co</text>
+
+  <!-- Bottom border -->
+  <rect x="0" y="626" width="1200" height="4" fill="url(#accent)" opacity="0.4"/>
+</svg>
