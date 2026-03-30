@@ -1,0 +1,21 @@
+{
+  "name": "dcm-portada",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0",
+    "vite-plugin-singlefile": "^2.3.0"
+  },
+  "dependencies": {
+    "cobe": "^0.6.5",
+    "globe.gl": "^2.45.0",
+    "gsap": "^3.14.2",
+    "three": "^0.183.1"
+  }
+}

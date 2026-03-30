@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO -->
+    <title>DCM System | Transformacion Digital, IA y Automatizacion Empresarial</title>
+    <meta name="description"
+        content="Mas de 20 anos impulsando la transformacion digital. Agentes IA, automatizacion RPA, desarrollo de software y soluciones para Utilities, Energia, Salud, Seguridad e Industria.">
+    <meta name="keywords"
+        content="DCM System, transformacion digital, inteligencia artificial, automatizacion RPA, agentes IA, desarrollo software, Colombia, Barranquilla, smart cities, IoT">
+    <meta name="author" content="DCM System SAS">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#0a0e1a">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Canonical + Hreflang -->
+    <link rel="canonical" href="https://dcmsystem.co/">
+    <link rel="alternate" hreflang="es" href="https://dcmsystem.co/">
+    <link rel="alternate" hreflang="en" href="https://dcmsystem.co/?lang=en">
+    <link rel="alternate" hreflang="x-default" href="https://dcmsystem.co/">
+
+    <!-- Favicons — Logo DCM real -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/dcm-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/dcm-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/dcm-icon.png">
+    <link rel="shortcut icon" href="/dcm-icon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dcmsystem.co/">
+    <meta property="og:title" content="DCM System | Transformacion Digital, IA y Automatizacion">
+    <meta property="og:description"
+        content="Mas de 20 anos construyendo infraestructura inteligente. Agentes IA, RPA, desarrollo de software y soluciones enterprise.">
+    <meta property="og:image" content="https://dcmsystem.co/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="DCM System">
+    <meta property="og:locale" content="es_CO">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DCM System | Transformacion Digital B2B">
+    <meta name="twitter:description"
+        content="Agentes IA, automatizacion RPA e integraciones profundas para empresas vanguardistas.">
+    <meta name="twitter:image" content="https://dcmsystem.co/og-image.png">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "DCM System SAS",
+      "url": "https://dcmsystem.co",
+      "logo": "https://dcmsystem.co/dcm-icon.png",
+      "description": "Empresa B2B de tecnologia con mas de 20 anos en Barranquilla, Colombia. IA, automatizacion RPA, desarrollo de software y agentes inteligentes.",
+      "foundingDate": "2005",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Carrera 60 68 133",
+        "addressLocality": "Barranquilla",
+        "addressRegion": "Atlantico",
+        "addressCountry": "CO"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+57-300-557-6926",
+        "email": "ventas@dcmsystem.co",
+        "contactType": "sales"
+      },
+      "sameAs": [
+        "https://www.instagram.com/dcmsystem"
+      ]
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- ========== PARTICLES CANVAS ========== -->
+    <canvas id="particles"></canvas>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#hero">
+                    <img src="/dcm-icon.png" alt="DCM System" class="logo-icon" />
+                    <img src="/dcm-text.png" alt="DCM System" class="logo-text" />
+                </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="#servicios" class="nav-link" data-i18n="nav.services">Servicios</a>
+                <a href="#demo" class="nav-link" data-i18n="nav.demo">Demo en Vivo</a>
+                <a href="#impacto" class="nav-link" data-i18n="nav.impact">Impacto Real</a>
+                <a href="https://agentes.dcmsystem.co" target="_blank" class="nav-link" data-i18n="nav.agents">Agentes
+                    IA <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.7em;margin-left:4px"></i></a>
+                <div class="lang-toggle" id="lang-toggle">
+                    <button class="lang-btn active" data-lang="es">ES</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <a href="#contacto" class="nav-cta" data-i18n="nav.cta">Iniciar Proyecto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== MAIN ========== -->
+    <div id="app">
+        <!-- Globe 3D -->
+        <div id="globe-container">
+            <canvas id="globe-canvas"></canvas>
+        </div>
+
+        <main class="main-container">
+            <!-- Progress Line -->
+            <div class="progress-line-wrapper">
+                <div class="progress-line-fill"></div>
+                <div class="line-node" id="node-1"></div>
+                <div class="line-node" id="node-2"></div>
+                <div class="line-node" id="node-3"></div>
+                <div class="line-node" id="node-4"></div>
+                <div class="line-node" id="node-5"></div>
+                <div class="line-node" id="node-6"></div>
+            </div>
+
+            <!-- ===== SECTION 1: HERO ===== -->
+            <section class="hero" id="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span data-i18n="hero.line1">Transformacion digital para</span><br>
+                        <span class="gradient-text shine-effect" data-i18n="hero.line2">Operaciones Criticas</span>
+                    </h1>
+                    <p class="hero-subtitle hero-fade-up" data-i18n="hero.subtitle">
+                        Mas de 20 anos construyendo infraestructura inteligente: Agentes Autonomos, automatizacion RPA e
+                        integraciones profundas a tu ERP. Escala la rentabilidad de tu empresa.
+                    </p>
+                    <div class="hero-actions hero-fade-up">
+                        <a href="#servicios" class="btn-primary">
+                            <i class="fa-solid fa-rocket"></i>
+                            <span data-i18n="hero.cta">Descubrir Soluciones</span>
+                        </a>
+                        <a href="#demo" class="btn-ghost">
+                            <i class="fa-solid fa-play"></i>
+                            <span data-i18n="hero.cta2">Ver Demo en Vivo</span>
+                        </a>
+                    </div>
+
+                    <!-- Telemetry Widget (inside hero-content, below buttons) -->
+                    <div class="telemetry-widget hero-fade-up">
+                        <div class="telemetry-card">
+                            <div class="telemetry-dot"></div>
+                            <div class="telemetry-data">
+                                <span class="telemetry-label">[ SYS_STATUS ]</span>
+                                <span class="telemetry-value">AI Engines <span class="text-accent">&bull;</span> Online</span>
+                            </div>
+                            <div class="telemetry-bar"><div class="telemetry-bar-fill"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== SECTION 2: SOCIAL PROOF ===== -->
+            <section class="social-proof" id="social-proof">
+                <div class="proof-grid">
+                    <div class="proof-item">
+                        <span class="proof-number" data-target="20">0</span>
+                        <span class="proof-suffix">+</span>
+                        <span class="proof-label" data-i18n="proof.years">Anos de Experiencia</span>
+                    </div>
+                    <div class="proof-divider"></div>
+                    <div class="proof-item">
+                        <span class="proof-number" data-target="150">0</span>
+                        <span class="proof-suffix">+</span>
+                        <span class="proof-label" data-i18n="proof.projects">Proyectos Entregados</span>
+                    </div>
+                    <div class="proof-divider"></div>
+                    <div class="proof-item">
+                        <span class="proof-number" data-target="50">0</span>
+                        <span class="proof-suffix">+</span>
+                        <span class="proof-label" data-i18n="proof.clients">Clientes Activos</span>
+                    </div>
+                    <div class="proof-divider"></div>
+                    <div class="proof-item">
+                        <span class="proof-number" data-target="8">0</span>
+                        <span class="proof-suffix"></span>
+                        <span class="proof-label" data-i18n="proof.countries">Paises</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== SECTION 3: SERVICIOS ===== -->
+            <section class="section-padding" id="servicios">
+                <div class="section-header fade-item">
+                    <span class="badge" data-i18n="services.badge">Soluciones Enterprise</span>
+                    <h2 class="section-title text-reveal" data-i18n="services.title">Todo lo que tu empresa necesita para evolucionar</h2>
+                    <p class="section-desc" data-i18n="services.desc">Desde desarrollo a medida hasta inteligencia artificial avanzada. Cada solucion, disenada para impactar tus resultados.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card" data-service="desarrollo">
+                        <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Desarrollo a Medida</h3>
+                        <p>Fabrica de software enterprise. Apps moviles, plataformas web, e-commerce y sistemas a medida con React, Angular, Laravel y Node.js.</p>
+                        <span class="service-tag">Proyecto: Zutrix - Plataforma SEO Global</span>
+                    </div>
+                    <div class="service-card" data-service="mantenimiento">
+                        <div class="service-icon"><i class="fa-solid fa-wrench"></i></div>
+                        <h3>Software de Mantenimiento</h3>
+                        <p>Gestion completa de ordenes de servicio, activos fisicos, mantenimiento preventivo y correctivo con reportes en tiempo real.</p>
+                        <span class="service-tag">Proyecto: Cannon - Sistema Industrial</span>
+                    </div>
+                    <div class="service-card" data-service="ia">
+                        <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h3>IA Avanzada Industrial</h3>
+                        <p>Modelos de inteligencia artificial para analisis predictivo, vision por computadora, NLP y automatizacion de decisiones criticas.</p>
+                        <span class="service-tag">OpenAI + Anthropic + Gemini</span>
+                    </div>
+                    <div class="service-card" data-service="agentes">
+                        <div class="service-icon"><i class="fa-solid fa-robot"></i></div>
+                        <h3>Agentes Inteligentes</h3>
+                        <p>Clones digitales entrenados con tus procesos. Venden, agendan, cobran y atienden clientes 24/7 con precision humana.</p>
+                        <span class="service-tag service-tag-hot">En Produccion - 6 Clientes Activos</span>
+                    </div>
+                    <div class="service-card" data-service="rpa">
+                        <div class="service-icon"><i class="fa-solid fa-gears"></i></div>
+                        <h3>Automatizacion RPA</h3>
+                        <p>Eliminamos el 80% de tareas repetitivas con flujos inteligentes en n8n y Make. Integraciones API, webhooks y orquestacion de datos.</p>
+                        <span class="service-tag">+200 flujos automatizados</span>
+                    </div>
+                    <div class="service-card" data-service="seguridad">
+                        <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3>Seguridad Ciudadana</h3>
+                        <p>CCTV inteligente con IA, deteccion de anomalias en tiempo real, monitoreo urbano centralizado y alertas automaticas ante emergencias.</p>
+                        <span class="service-tag">Ciudades Inteligentes Colombia</span>
+                    </div>
+                    <div class="service-card" data-service="iot">
+                        <div class="service-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <h3>IoT / BLE / RFID / NFC</h3>
+                        <p>Sensores industriales, rastreo de activos con BLE y RFID, control de procesos por proximidad y geofencing inteligente.</p>
+                        <span class="service-tag">Proyecto: ID Digital - Carnet Digital</span>
+                    </div>
+                    <div class="service-card" data-service="integracion">
+                        <div class="service-icon"><i class="fa-solid fa-plug"></i></div>
+                        <h3>Integracion de Sistemas</h3>
+                        <p>Conectamos tu ERP, CRM, facturacion y plataformas legacy en un ecosistema unificado. SAP, Oracle, Dynamics, Salesforce, HubSpot.</p>
+                        <span class="service-tag">Middleware + API Gateway</span>
+                    </div>
+                    <div class="service-card" data-service="analitica">
+                        <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3>Analitica y Smart Cities</h3>
+                        <p>Dashboards ejecutivos con KPIs predictivos, data lakes, business intelligence avanzado y soluciones de ciudades inteligentes.</p>
+                        <span class="service-tag">Utilities + Energia + Gobierno</span>
+                    </div>
+                    <div class="service-card" data-service="academia">
+                        <div class="service-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3>Capacitacion en IA</h3>
+                        <p>Programas de formacion empresarial en inteligencia artificial, automatizacion y transformacion digital. Workshops y certificaciones.</p>
+                        <span class="service-tag">AcademIA - Portal Dedicado</span>
+                    </div>
+                </div>
+
+                <!-- Service Detail Panel (populated by JS) -->
+                <div class="service-detail" id="service-detail">
+                    <div class="service-detail-inner">
+                        <div class="service-detail-close" id="service-detail-close"><i class="fa-solid fa-xmark"></i></div>
+                        <h3 class="service-detail-title" id="svc-detail-title"></h3>
+                        <p class="service-detail-desc" id="svc-detail-desc"></p>
+                        <ul class="service-detail-features" id="svc-detail-features"></ul>
+                        <a href="#contacto" class="btn-primary btn-sm" data-i18n="services.cta">Solicitar Informacion</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== SECTION 4: DEMO EN VIVO ===== -->
+            <section class="section-padding" id="demo">
+                <div class="section-header fade-item">
+                    <span class="badge badge-green" data-i18n="demo.badge">Demo Interactivo</span>
+                    <h2 class="section-title text-reveal" data-i18n="demo.title">Experimenta el Poder de los Agentes IA</h2>
+                    <p class="section-desc" data-i18n="demo.desc">Selecciona un escenario y observa como nuestros agentes resuelven situaciones reales de negocio en tiempo real.</p>
+                </div>
+
+                <div class="demo-layout">
+                    <!-- Scenario Cards -->
+                    <div class="demo-scenarios">
+                        <div class="scenario-card active" data-scenario="ventas">
+                            <i class="fa-solid fa-headset"></i>
+                            <div>
+                                <h4 data-i18n="demo.sales.title">Arquitecto de Ventas</h4>
+                                <p data-i18n="demo.sales.desc">Califica leads B2B y genera cotizaciones.</p>
+                            </div>
+                        </div>
+                        <div class="scenario-card" data-scenario="agenda">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            <div>
+                                <h4 data-i18n="demo.schedule.title">Sincronizador SDR</h4>
+                                <p data-i18n="demo.schedule.desc">Agenda reuniones con prospectos.</p>
+                            </div>
+                        </div>
+                        <div class="scenario-card" data-scenario="cobranza">
+                            <i class="fa-solid fa-sack-dollar"></i>
+                            <div>
+                                <h4 data-i18n="demo.billing.title">Motor de Cobranza</h4>
+                                <p data-i18n="demo.billing.desc">Negocia plazos y genera links de pago.</p>
+                            </div>
+                        </div>
+                        <div class="scenario-card" data-scenario="rrhh">
+                            <i class="fa-solid fa-users-gear"></i>
+                            <div>
+                                <h4 data-i18n="demo.hr.title">Nucleo HR</h4>
+                                <p data-i18n="demo.hr.desc">Onboarding y soporte IT automatizado.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chat Simulator -->
+                    <div class="chat-simulator">
+                        <div class="chat-header">
+                            <div class="chat-avatar" id="chat-avatar">
+                                <i class="fa-solid fa-robot" id="chat-avatar-icon"></i>
+                                <span class="chat-online-dot"></span>
+                            </div>
+                            <div class="chat-info">
+                                <span class="chat-name" id="chat-name">Arquitecto de Ventas</span>
+                                <span class="chat-status" id="chat-status" data-i18n="demo.online">En linea</span>
+                            </div>
+                        </div>
+                        <div class="chat-body" id="chat-body">
+                            <div class="chat-bubble bot">
+                                <span data-i18n="demo.welcome">Hola! Selecciona un escenario para ver al Agente en accion.</span>
+                            </div>
+                        </div>
+                        <div class="chat-input-fake">
+                            <span data-i18n="demo.placeholder">Escribe un mensaje...</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="demo-cta-wrapper fade-item">
+                    <a href="https://agentes.dcmsystem.co" target="_blank" class="btn-primary">
+                        <i class="fa-solid fa-robot"></i>
+                        <span data-i18n="demo.cta">Conocer Todos los Agentes</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </section>
+
+            <!-- ===== SECTION 4.5: CHATBOTS EN PRODUCCION ===== -->
+            <section class="section-padding" id="chatbots-live">
+                <div class="section-header fade-item">
+                    <span class="badge badge-green">En Produccion</span>
+                    <h2 class="section-title text-reveal">Chatbots que Construimos y Operamos</h2>
+                    <p class="section-desc">Estos agentes estan en vivo atendiendo clientes reales. Cada uno fue disenado, entrenado y desplegado por DCM System.</p>
+                </div>
+
+                <div class="chatbots-showcase">
+                    <!-- Bot 1: Cannon Soporte -->
+                    <div class="bot-preview fade-item">
+                        <div class="bot-preview-phone">
+                            <div class="bot-phone-notch"></div>
+                            <div class="bot-phone-screen">
+                                <div class="bot-phone-header" style="background: linear-gradient(135deg, #ef4444, #b91c1c);">
+                                    <div class="bot-phone-avatar"><i class="fa-solid fa-ship"></i></div>
+                                    <div>
+                                        <div class="bot-phone-name">Cannon Soporte</div>
+                                        <div class="bot-phone-status">Soporte Industrial IA</div>
+                                    </div>
+                                </div>
+                                <div class="bot-phone-chat">
+                                    <div class="bot-phone-msg bot">Soy el agente de soporte de Cannon. Puedo darte info sobre contenedores, alertas y ordenes de servicio.</div>
+                                    <div class="bot-phone-msg user">Dashboard de contenedores</div>
+                                    <div class="bot-phone-widget" style="border-color: rgba(239,68,68,0.3);">
+                                        <div style="font-size:0.6rem; font-family:monospace; color:#e2e8f0; line-height:1.7;">
+                                            <div><span style="color:#22c55e">A_TIEMPO</span> 12 contenedores</div>
+                                            <div><span style="color:#f59e0b">LEVE</span> 3 (1-3 dias)</div>
+                                            <div><span style="color:#ef4444">CRITICO</span> 1 (+7 dias)</div>
+                                        </div>
+                                    </div>
+                                    <div class="bot-phone-msg bot">Contenedor MSKU-284719 con 9 dias de retraso. Notifico al admin?</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bot-preview-info">
+                            <div class="bot-preview-country">
+                                <span class="country-flag">CA</span>
+                                <span class="country-flag">CO</span>
+                            </div>
+                            <h3><i class="fa-solid fa-ship" style="color:#ef4444"></i> Cannon Container Tracking</h3>
+                            <p>Agente IA con 8 herramientas: dashboard de contenedores, tracking en tiempo real, alertas por nivel de retraso y notificacion a admins. Supabase + n8n.</p>
+                            <div class="bot-preview-stats">
+                                <div class="bot-stat"><strong>8</strong><span>Herramientas IA</span></div>
+                                <div class="bot-stat"><strong>OpenAI</strong><span>Motor IA</span></div>
+                                <div class="bot-stat"><strong>32</strong><span>Nodos n8n</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bot 2: JUDAH AI — Boston International School -->
+                    <div class="bot-preview fade-item">
+                        <div class="bot-preview-phone">
+                            <div class="bot-phone-notch"></div>
+                            <div class="bot-phone-screen">
+                                <div class="bot-phone-header" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);">
+                                    <div class="bot-phone-avatar"><i class="fa-solid fa-graduation-cap"></i></div>
+                                    <div>
+                                        <div class="bot-phone-name">JUDAH AI</div>
+                                        <div class="bot-phone-status">Asistente Educativo</div>
+                                    </div>
+                                </div>
+                                <div class="bot-phone-chat">
+                                    <div class="bot-phone-msg bot">Bienvenido al Boston International School. Soy JUDAH AI. Puedo ayudarle con admisiones, matriculas, sedes y programas.</div>
+                                    <div class="bot-phone-msg user">Proceso de admision</div>
+                                    <div class="bot-phone-msg bot">El proceso incluye entrevista familiar, evaluacion del estudiante y revision de documentos.</div>
+                                    <div class="bot-phone-widget" style="border-color: rgba(59,130,246,0.3);">
+                                        <span style="color:#3b82f6; font-weight:700;">Admisiones BIS</span>
+                                        <div style="font-size:0.55rem; color:#94a3b8; margin-top:3px;">WhatsApp: 317 637 8079</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bot-preview-info">
+                            <div class="bot-preview-country">
+                                <span class="country-flag">CO</span>
+                            </div>
+                            <h3><i class="fa-solid fa-graduation-cap" style="color:#3b82f6"></i> JUDAH AI — Colegio BIS</h3>
+                            <p>Asistente con RAG sobre 33 documentos. Admisiones, sedes, programas y eventos. Busqueda hibrida 70% vector + 30% keyword. n8n con 20 nodos.</p>
+                            <div class="bot-preview-stats">
+                                <div class="bot-stat"><strong>33</strong><span>Docs RAG</span></div>
+                                <div class="bot-stat"><strong>OpenAI</strong><span>Motor IA</span></div>
+                                <div class="bot-stat"><strong>20</strong><span>Nodos n8n</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bot 3: Bitfin CFO Virtual -->
+                    <div class="bot-preview fade-item">
+                        <div class="bot-preview-phone">
+                            <div class="bot-phone-notch"></div>
+                            <div class="bot-phone-screen">
+                                <div class="bot-phone-header" style="background: linear-gradient(135deg, #625ADF, #4338ca);">
+                                    <div class="bot-phone-avatar"><i class="fa-solid fa-chart-pie"></i></div>
+                                    <div>
+                                        <div class="bot-phone-name">CFO Virtual</div>
+                                        <div class="bot-phone-status">Asesor Financiero IA</div>
+                                    </div>
+                                </div>
+                                <div class="bot-phone-chat">
+                                    <div class="bot-phone-msg bot">Soy tu CFO Virtual. Acceso a balance general, indicadores y movimientos contables en tiempo real.</div>
+                                    <div class="bot-phone-msg user">Liquidez de la empresa</div>
+                                    <div class="bot-phone-widget" style="border-color: rgba(98,90,223,0.3);">
+                                        <div style="font-size:0.6rem; font-family:monospace; color:#e2e8f0; line-height:1.7;">
+                                            <div>Liquidez: <span style="color:#22c55e">2.4</span> Saludable</div>
+                                            <div>ROE: <span style="color:#f59e0b">12.3%</span></div>
+                                            <div>Margen: <span style="color:#22c55e">8.7%</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="bot-phone-msg bot">Liquidez saludable. Margen neto bajo 0.5% vs mes anterior. Revisa gastos operativos.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bot-preview-info">
+                            <div class="bot-preview-country">
+                                <span class="country-flag">CO</span>
+                                <span class="country-flag">US</span>
+                            </div>
+                            <h3><i class="fa-solid fa-chart-pie" style="color:#625ADF"></i> Bitfin — CFO Virtual</h3>
+                            <p>Asesor financiero IA que analiza 55,680+ movimientos contables, indicadores de liquidez, solvencia y rentabilidad. Conectado a SIIGO. Gemini 2.0 Flash + RAG.</p>
+                            <div class="bot-preview-stats">
+                                <div class="bot-stat"><strong>55K+</strong><span>Movimientos</span></div>
+                                <div class="bot-stat"><strong>Gemini + Claude</strong><span>Motor IA</span></div>
+                                <div class="bot-stat"><strong>SIIGO</strong><span>Integracion</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="demo-cta-wrapper fade-item" style="margin-top:3rem;">
+                    <p style="color:#94a3b8; font-size:0.95rem; margin-bottom:1.5rem;">3 agentes en produccion con datos reales. Construimos el tuyo con la misma tecnologia.</p>
+                    <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+                        <a href="#contacto" class="btn-primary">
+                            <i class="fa-solid fa-robot"></i>
+                            <span>Quiero Mi Propio Agente IA</span>
+                        </a>
+                        <a href="https://agentes.dcmsystem.co" target="_blank" class="btn-ghost">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            <span>Ver Mas Agentes</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== SECTION 5: ARQUITECTURA ===== -->
+            <section class="section-padding" id="arquitectura">
+                <div class="section-header fade-item">
+                    <span class="badge badge-cyan" data-i18n="arch.badge">Arquitectura Enterprise</span>
+                    <h2 class="section-title text-reveal" data-i18n="arch.title">Soberania de Datos e IA Privada</h2>
+                    <p class="section-desc" data-i18n="arch.desc">Disenamos, desplegamos y gestionamos Arquitecturas de Clusters Dedicados con bases de datos, automatizacion RPA y motores de IA en tu propia infraestructura.</p>
+                </div>
+
+                <!-- Architecture Blueprint (will be built in Sprint 3) -->
+                <div class="arch-blueprint fade-item" id="arch-blueprint">
+                    <!-- Blueprint content migrated from old site goes here -->
+                </div>
+
+                <!-- Terminal Simulator -->
+                <div class="terminal-window fade-item">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">root@dcm-soc:~ $ tail -f /var/log/dcm-cluster.log</span>
+                    </div>
+                    <div class="terminal-body" id="terminal-logs">
+                        <div class="log-line"><span class="log-info">[INFO]</span> Global Infrastructure SOC active.</div>
+                        <div class="log-line"><span class="log-ok">[READY]</span> Monitoring cross-node payloads...</div>
+                        <div class="log-line">root@dcm-soc:~# <span class="blink">_</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== SECTION 6: IMPACTO REAL ===== -->
+            <section class="section-padding" id="impacto">
+                <div class="section-header fade-item">
+                    <span class="badge badge-green" data-i18n="impact.badge">Resultados Comprobados</span>
+                    <h2 class="section-title text-reveal" data-i18n="impact.title">Impacto Real en Numeros</h2>
+                </div>
+
+                <div class="impact-grid">
+                    <div class="impact-card fade-item">
+                        <svg class="impact-ring" viewBox="0 0 120 120">
+                            <circle class="ring-bg" cx="60" cy="60" r="52" />
+                            <circle class="ring-fill" cx="60" cy="60" r="52" data-percent="40" />
+                        </svg>
+                        <div class="impact-value"><span class="impact-number" data-target="40">0</span>%</div>
+                        <p class="impact-label">Reduccion en tiempos operativos</p>
+                        <span class="impact-industry">Cannon - Industria</span>
+                    </div>
+                    <div class="impact-card fade-item">
+                        <svg class="impact-ring" viewBox="0 0 120 120">
+                            <circle class="ring-bg" cx="60" cy="60" r="52" />
+                            <circle class="ring-fill" cx="60" cy="60" r="52" data-percent="25" />
+                        </svg>
+                        <div class="impact-value"><span class="impact-number" data-target="25">0</span>%</div>
+                        <p class="impact-label">Optimizacion de recursos</p>
+                        <span class="impact-industry">Utilities + Energia</span>
+                    </div>
+                    <div class="impact-card fade-item">
+                        <svg class="impact-ring" viewBox="0 0 120 120">
+                            <circle class="ring-bg" cx="60" cy="60" r="52" />
+                            <circle class="ring-fill" cx="60" cy="60" r="52" data-percent="30" />
+                        </svg>
+                        <div class="impact-value"><span class="impact-number" data-target="30">0</span>%</div>
+                        <p class="impact-label">Mejora en capacidad de respuesta</p>
+                        <span class="impact-industry">Sector Salud</span>
+                    </div>
+                </div>
+
+                <!-- Featured Projects -->
+                <div class="projects-showcase fade-item">
+                    <h3 class="projects-title">Proyectos Destacados en Produccion</h3>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <i class="fa-solid fa-id-card"></i>
+                                <span class="project-status live">EN VIVO</span>
+                            </div>
+                            <h4>ID Digital / Carnet Digital</h4>
+                            <p>Plataforma de identificacion digital con IoT, BLE y NFC. Gestion de credenciales empresariales inteligentes desplegada en Colombia.</p>
+                            <div class="project-tech">
+                                <span>IoT</span><span>BLE</span><span>NFC</span><span>React</span>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-header">
+                                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                                <span class="project-status live">EN VIVO</span>
+                            </div>
+                            <h4>Zutrix</h4>
+                            <p>Plataforma SEO global con tracking de posiciones en tiempo real, analisis de competencia y reportes automatizados. Operando desde Miami e Israel.</p>
+                            <div class="project-tech">
+                                <span>Node.js</span><span>Python</span><span>AI</span><span>Global</span>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-header">
+                                <i class="fa-solid fa-industry"></i>
+                                <span class="project-status live">EN VIVO</span>
+                            </div>
+                            <h4>Cannon</h4>
+                            <p>Sistema de inteligencia artificial y automatizacion industrial para gestion de mantenimiento, ordenes de servicio y soporte tecnico en Canada.</p>
+                            <div class="project-tech">
+                                <span>IA</span><span>RPA</span><span>n8n</span><span>Supabase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== SECTION 7: INDUSTRIAS ===== -->
+            <section class="section-padding" id="industrias">
+                <div class="section-header fade-item">
+                    <span class="badge" data-i18n="industries.badge">Sectores que Transformamos</span>
+                    <h2 class="section-title text-reveal" data-i18n="industries.title">Experiencia Multi-Industria</h2>
+                </div>
+
+                <div class="industries-grid">
+                    <div class="industry-card fade-item" data-color="#f59e0b">
+                        <i class="fa-solid fa-bolt"></i>
+                        <h3 data-i18n="ind.utilities">Utilities</h3>
+                    </div>
+                    <div class="industry-card fade-item" data-color="#22c55e">
+                        <i class="fa-solid fa-solar-panel"></i>
+                        <h3 data-i18n="ind.energy">Energia</h3>
+                    </div>
+                    <div class="industry-card fade-item" data-color="#ef4444">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                        <h3 data-i18n="ind.health">Salud</h3>
+                    </div>
+                    <div class="industry-card fade-item" data-color="#3b82f6">
+                        <i class="fa-solid fa-video"></i>
+                        <h3 data-i18n="ind.security">Seguridad Ciudadana</h3>
+                    </div>
+                    <div class="industry-card fade-item" data-color="#a855f7">
+                        <i class="fa-solid fa-industry"></i>
+                        <h3 data-i18n="ind.industry">Industria</h3>
+                    </div>
+                    <div class="industry-card fade-item" data-color="#06b6d4">
+                        <i class="fa-solid fa-city"></i>
+                        <h3 data-i18n="ind.smart">Smart Cities</h3>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== SECTION 8: TECH STACK ===== -->
+            <section class="section-padding" id="tecnologias">
+                <div class="section-header fade-item">
+                    <h2 class="section-title text-reveal" data-i18n="tech.title">Tecnologias que Dominamos</h2>
+                </div>
+                <div class="marquee-wrapper">
+                    <div class="marquee-track">
+                        <div class="marquee-item">React</div>
+                        <div class="marquee-item">Node.js</div>
+                        <div class="marquee-item">Python</div>
+                        <div class="marquee-item">n8n</div>
+                        <div class="marquee-item">Docker</div>
+                        <div class="marquee-item">Supabase</div>
+                        <div class="marquee-item">PostgreSQL</div>
+                        <div class="marquee-item">OpenAI</div>
+                        <div class="marquee-item">Anthropic</div>
+                        <div class="marquee-item">Angular</div>
+                        <div class="marquee-item">Laravel</div>
+                        <div class="marquee-item">Three.js</div>
+                        <!-- Duplicate for infinite scroll -->
+                        <div class="marquee-item">React</div>
+                        <div class="marquee-item">Node.js</div>
+                        <div class="marquee-item">Python</div>
+                        <div class="marquee-item">n8n</div>
+                        <div class="marquee-item">Docker</div>
+                        <div class="marquee-item">Supabase</div>
+                        <div class="marquee-item">PostgreSQL</div>
+                        <div class="marquee-item">OpenAI</div>
+                        <div class="marquee-item">Anthropic</div>
+                        <div class="marquee-item">Angular</div>
+                        <div class="marquee-item">Laravel</div>
+                        <div class="marquee-item">Three.js</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== SECTION 9: ACADEMIA ===== -->
+            <section class="section-padding" id="academia">
+                <div class="academia-card fade-item">
+                    <span class="badge badge-cyan" data-i18n="academy.badge">Plataforma Independiente</span>
+                    <h2 class="section-title" data-i18n="academy.title">Academ IA</h2>
+                    <p data-i18n="academy.desc">Todo el poder de nuestro ecosistema para educacion en su propio portal dedicado. Transforma tu institucion con IA.</p>
+                    <a href="https://academia.dcmsystem.co" target="_blank" class="btn-primary btn-cyan">
+                        <span data-i18n="academy.cta">Visitar Portal AcademIA</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </section>
+
+            <!-- ===== SECTION 10: CONTACTO ===== -->
+            <section class="section-padding" id="contacto">
+                <div class="section-header fade-item">
+                    <span class="badge" data-i18n="contact.badge">Hablemos</span>
+                    <h2 class="section-title text-reveal" data-i18n="contact.title">Inicia tu Proyecto</h2>
+                    <p class="section-desc" data-i18n="contact.desc">Cuentanos tu reto tecnologico. Nuestro equipo te contactara en menos de 24 horas.</p>
+                </div>
+
+                <div class="contact-layout">
+                    <form class="contact-form glass-card" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" required data-i18n-placeholder="contact.name" placeholder="Nombre completo">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" required data-i18n-placeholder="contact.email" placeholder="Email corporativo">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="company" data-i18n-placeholder="contact.company" placeholder="Empresa">
+                        </div>
+                        <div class="form-group">
+                            <select name="service" required>
+                                <option value="" data-i18n="contact.service">Servicio de interes</option>
+                                <option value="desarrollo" data-i18n="svc.dev.title">Desarrollo a Medida</option>
+                                <option value="mantenimiento" data-i18n="svc.maint.title">Software de Mantenimiento</option>
+                                <option value="ia" data-i18n="svc.ai.title">IA Avanzada Industrial</option>
+                                <option value="agentes" data-i18n="svc.agents.title">Agentes Inteligentes</option>
+                                <option value="rpa" data-i18n="svc.rpa.title">Automatizacion RPA</option>
+                                <option value="seguridad" data-i18n="svc.security.title">Seguridad Ciudadana</option>
+                                <option value="iot" data-i18n="svc.iot.title">IoT / BLE / RFID</option>
+                                <option value="integracion" data-i18n="svc.integration.title">Integracion de Sistemas</option>
+                                <option value="analitica" data-i18n="svc.analytics.title">Analitica y Smart Cities</option>
+                                <option value="academia" data-i18n="svc.academy.title">Capacitacion en IA</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="4" data-i18n-placeholder="contact.message" placeholder="Cuentanos tu reto..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span data-i18n="contact.submit">Enviar Mensaje</span>
+                        </button>
+                    </form>
+
+                    <div class="contact-info">
+                        <div class="contact-item fade-item">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <div>
+                                <h4 data-i18n="contact.whatsapp">WhatsApp</h4>
+                                <a href="https://wa.me/573013685757" target="_blank">+57 301 368 5757</a>
+                            </div>
+                        </div>
+                        <div class="contact-item fade-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h4 data-i18n="contact.phone">Telefono</h4>
+                                <a href="tel:+573005576926">+57 300 557 6926</a>
+                            </div>
+                        </div>
+                        <div class="contact-item fade-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:ventas@dcmsystem.co">ventas@dcmsystem.co</a>
+                            </div>
+                        </div>
+                        <div class="contact-item fade-item">
+                            <i class="fa-brands fa-instagram"></i>
+                            <div>
+                                <h4>Instagram</h4>
+                                <a href="https://instagram.com/dcmsystem" target="_blank">@dcmsystem</a>
+                            </div>
+                        </div>
+                        <div class="contact-item fade-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h4 data-i18n="contact.location">Ubicacion</h4>
+                                <p>Barranquilla, Atlantico, Colombia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== FOOTER ===== -->
+            <footer class="footer" id="footer">
+                <div class="footer-separator"></div>
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <img src="/dcm-logo-white.png" alt="DCM System" class="footer-logo">
+                        <p data-i18n="footer.desc">Transformando la tecnologia en un motor de crecimiento para empresas y ciudades inteligentes desde 2005.</p>
+                    </div>
+                    <div class="footer-links">
+                        <h4 data-i18n="footer.nav">Navegacion</h4>
+                        <a href="#servicios" data-i18n="nav.services">Servicios</a>
+                        <a href="#demo" data-i18n="nav.demo">Demo en Vivo</a>
+                        <a href="#impacto" data-i18n="nav.impact">Impacto Real</a>
+                        <a href="#contacto" data-i18n="contact.badge">Hablemos</a>
+                    </div>
+                    <div class="footer-links">
+                        <h4 data-i18n="footer.platforms">Plataformas</h4>
+                        <a href="https://agentes.dcmsystem.co" target="_blank" data-i18n="nav.agents">Agentes IA</a>
+                        <a href="https://academia.dcmsystem.co" target="_blank" data-i18n="academy.title">Academ IA</a>
+                    </div>
+                    <div class="footer-contact">
+                        <h4 data-i18n="footer.contact">Contacto</h4>
+                        <a href="mailto:ventas@dcmsystem.co">ventas@dcmsystem.co</a>
+                        <a href="tel:+573005576926">+57 300 557 6926</a>
+                        <div class="footer-social">
+                            <a href="https://instagram.com/dcmsystem" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://wa.me/573013685757" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 DCM System SAS. Barranquilla, Colombia. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/573013685757?text=Hola%20DCM%20System%2C%20quiero%20informacion%20sobre%20sus%20servicios" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-pulse"></span>
+    </a>
+
+    <script type="module" src="/src/main.js"></script>
+
+    <!-- Chat Simulator Engine -->
+    <script>
+        const agentScenarios = {
+            ventas: {
+                name: 'Arquitecto de Ventas', nameEn: 'Sales Architect',
+                status: 'Sintetizando Propuesta B2B', icon: 'fa-headset', color: '#3b82f6',
+                steps: [
+                    { type: 'text', delay: 800, content: 'Hola Carlos. Note que tu empresa descargo nuestro Whitepaper sobre Infraestructura Cloud. Buscas optimizar latencias o reducir costos de servidor?' },
+                    { type: 'user', delay: 2500, content: 'Ambas cosas. Tenemos picos de trafico en e-commerce y AWS nos esta saliendo carisimo.' },
+                    { type: 'think', delay: 2000, process: '[Analizando parametros tecnicos...]', detail: 'Querying Azure/AWS pricing parity. Generating Cloud Architecture Blueprint.' },
+                    { type: 'text', delay: 1500, content: 'Entendido. He disenado una arquitectura hibrida que reduce el TCO en un 42%. Te adjunto la propuesta comercial preliminar.' },
+                    { type: 'widget', delay: 1200, html: '<div style="background:rgba(59,130,246,0.05);border:1px solid rgba(59,130,246,0.3);border-radius:12px;padding:1rem;"><img src="/proposal.png" alt="Propuesta" style="width:100%;height:120px;border-radius:8px;object-fit:cover;opacity:0.8;margin-bottom:10px;border:1px solid rgba(255,255,255,0.1);pointer-events:auto;"><div style="display:flex;align-items:center;justify-content:space-between;"><div><div style="font-weight:bold;color:#fff;font-size:0.9rem;">Propuesta_Infraestructura.pdf</div><div style="font-size:0.7rem;color:#94a3b8;"><i class="fa-solid fa-lock" style="color:#3b82f6;margin-right:4px;"></i>Cifrado E2E - 2.4 MB</div></div></div></div>' }
+                ]
+            },
+            agenda: {
+                name: 'Sincronizador SDR', nameEn: 'SDR Synchronizer',
+                status: 'Negociando Calendarios', icon: 'fa-calendar-check', color: '#a855f7',
+                steps: [
+                    { type: 'text', delay: 800, content: 'Hola Laura. El Ingeniero Principal reviso tu caso y me pide agendar una demo tecnica de 45 min contigo esta semana.' },
+                    { type: 'user', delay: 2000, content: 'El jueves despues de las 3:00 PM o el viernes a las 10:00 AM me sirve.' },
+                    { type: 'think', delay: 2500, process: '[Parsing NLP -> DateTime...]', detail: 'Querying calendar. Match found: Jueves 15:30 (GMT-5).' },
+                    { type: 'text', delay: 1500, content: 'Ambos tienen libre el Jueves a las 3:30 PM. He bloqueado ese espacio.' },
+                    { type: 'widget', delay: 800, html: '<div style="background:rgba(168,85,247,0.05);border:1px solid rgba(168,85,247,0.3);border-radius:12px;padding:1.2rem;display:flex;align-items:stretch;gap:15px;"><div style="background:rgba(168,85,247,0.15);border-radius:8px;padding:10px;text-align:center;min-width:60px;"><div style="font-size:0.7rem;text-transform:uppercase;color:#c084fc;font-weight:bold;">Jueves</div><div style="font-size:1.8rem;font-weight:900;color:#fff;line-height:1;">14</div></div><div style="flex-grow:1;display:flex;flex-direction:column;justify-content:center;"><div style="font-weight:bold;color:#e2e8f0;font-size:1rem;margin-bottom:5px;">Demo Tecnica</div><div style="font-size:0.8rem;color:#cbd5e1;"><i class="fa-regular fa-clock" style="color:#c084fc;margin-right:4px;"></i>3:30 PM - 4:15 PM</div></div></div>' }
+                ]
+            },
+            cobranza: {
+                name: 'Motor Ejecutivo', nameEn: 'Collection Engine',
+                status: 'Validando Identidad y Recaudo', icon: 'fa-sack-dollar', color: '#ef4444',
+                steps: [
+                    { type: 'text', delay: 800, content: 'Buen dia. Me comunico del departamento de cartera corporativa. Necesito validar tu NIT para revisar el estado de cuenta.' },
+                    { type: 'user', delay: 2200, content: 'Hola, si claro. NIT: 901.442.112-9' },
+                    { type: 'think', delay: 2000, process: '[Validando en SAP CRM...]', detail: 'Empresa: Grupo Inversor Sur. Factura Pendiente: 1 (Alto Riesgo).' },
+                    { type: 'text', delay: 1500, content: 'Verificado. Resumen financiero generado con opcion de liquidacion inmediata.' },
+                    { type: 'widget', delay: 800, html: '<div style="background:rgba(239,68,68,0.05);border:1px solid rgba(239,68,68,0.4);border-radius:12px;padding:1.5rem;"><div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,0.1);padding-bottom:12px;margin-bottom:12px;"><div><h4 style="color:#fff;margin:0;font-size:1rem;">Estado de Cuenta</h4><div style="font-size:0.7rem;color:#94a3b8;font-family:monospace;">NIT: 901.442.112-9</div></div><span style="font-size:0.7rem;background:rgba(239,68,68,0.2);color:#fca5a5;padding:3px 6px;border-radius:4px;font-weight:bold;">VENCIDA</span></div><div style="background:rgba(0,0,0,0.3);border-radius:8px;padding:12px;text-align:center;"><div style="font-size:0.75rem;color:#cbd5e1;margin-bottom:4px;">Total a Pagar</div><div style="font-size:2rem;font-weight:900;color:#ef4444;line-height:1;">$12,450 <span style="font-size:0.85rem;color:#94a3b8;font-weight:500;">USD</span></div></div></div>' }
+                ]
+            },
+            rrhh: {
+                name: 'Nucleo HR', nameEn: 'HR Core',
+                status: 'Soporte Empleados Online', icon: 'fa-users-gear', color: '#f59e0b',
+                steps: [
+                    { type: 'text', delay: 800, content: 'Hola. Soy la IA de RRHH. Para emitir tu certificado laboral bancario urgente, necesito validar tu cargo.' },
+                    { type: 'user', delay: 2000, content: 'Soy Ingeniero de DevOps Senior.' },
+                    { type: 'think', delay: 2200, process: '[Validando Identity & Access...]', detail: 'Active Directory: Empleado Activo. Extrayendo datos salariales.' },
+                    { type: 'text', delay: 1500, content: 'Validado. Documento generado con firma electronica y marca de agua oficial.' },
+                    { type: 'widget', delay: 500, html: '<div style="background:rgba(245,158,11,0.05);border:1px solid rgba(245,158,11,0.4);border-radius:8px;padding:1rem;"><div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,0.1);padding-bottom:8px;margin-bottom:8px;"><span style="font-size:0.8rem;color:#cbd5e1;">Ticket #HR-0922</span><span style="font-size:0.7rem;background:rgba(34,197,94,0.2);color:#4ade80;padding:2px 6px;border-radius:4px;font-weight:bold;">RESUELTO</span></div><div style="font-size:0.8rem;color:#94a3b8;display:flex;align-items:center;gap:6px;"><i class="fa-solid fa-bolt" style="color:#f59e0b;"></i> Tiempo de resolucion: 2.1 seg (SLA: < 5 min)</div></div>' }
+                ]
+            }
+        };
+
+        let currentChatTimeouts = [];
+
+        function changeDemoChat(scenarioId) {
+            currentChatTimeouts.forEach(clearTimeout);
+            currentChatTimeouts = [];
+
+            const scenario = agentScenarios[scenarioId];
+            if (!scenario) return;
+
+            document.getElementById('chat-name').textContent = scenario.name;
+            document.getElementById('chat-status').textContent = scenario.status;
+
+            const avatar = document.getElementById('chat-avatar');
+            const icon = document.getElementById('chat-avatar-icon');
+            avatar.style.background = `linear-gradient(135deg, ${scenario.color}88, ${scenario.color})`;
+            icon.className = `fa-solid ${scenario.icon}`;
+
+            document.querySelectorAll('.scenario-card').forEach(c => c.classList.remove('active'));
+            const active = document.querySelector(`[data-scenario="${scenarioId}"]`);
+            if (active) active.classList.add('active');
+
+            const chatBody = document.getElementById('chat-body');
+            chatBody.innerHTML = '';
+
+            const getTime = () => new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            const scroll = () => { chatBody.scrollTop = chatBody.scrollHeight; };
+
+            let delay = 0;
+            scenario.steps.forEach(step => {
+                delay += step.delay;
+                const tid = setTimeout(() => {
+                    const old = document.getElementById('typing-ind');
+                    if (old && step.type !== 'user') old.remove();
+
+                    if (step.type === 'text') {
+                        chatBody.insertAdjacentHTML('beforeend', `<div class="chat-bubble bot" style="animation:fadeUp 0.3s ease-out">${step.content}<div style="font-size:0.6rem;color:rgba(255,255,255,0.3);text-align:right;margin-top:4px;">${getTime()}</div></div>`);
+                    } else if (step.type === 'user') {
+                        chatBody.insertAdjacentHTML('beforeend', `<div class="chat-bubble user" style="animation:fadeUp 0.3s ease-out">${step.content}<div style="font-size:0.6rem;color:rgba(255,255,255,0.5);text-align:right;margin-top:4px;">${getTime()} <i class="fa-solid fa-check-double" style="margin-left:3px;"></i></div></div>`);
+                    } else if (step.type === 'think') {
+                        chatBody.insertAdjacentHTML('beforeend', `<div id="typing-ind" style="display:flex;gap:8px;align-items:flex-start;margin-bottom:8px;animation:fadeUp 0.2s"><div class="typing-indicator"><span></span><span></span><span></span></div><div style="font-family:monospace;font-size:0.7rem;color:#64748b;padding-top:4px;"><div style="color:${scenario.color}">${step.process}</div><div style="font-size:0.6rem;opacity:0.7;">${step.detail}</div></div></div>`);
+                    } else if (step.type === 'widget') {
+                        chatBody.insertAdjacentHTML('beforeend', `<div style="animation:fadeUp 0.4s ease-out;margin-bottom:0.5rem;">${step.html}</div>`);
+                    }
+                    scroll();
+                }, delay);
+                currentChatTimeouts.push(tid);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.scenario-card').forEach(card => {
+                card.addEventListener('click', () => changeDemoChat(card.dataset.scenario));
+            });
+            changeDemoChat('ventas');
+        });
+    </script>
+</body>
+
+</html>
