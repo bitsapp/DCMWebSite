@@ -200,7 +200,7 @@ const sectionContext = {
         opts: [{ es: 'IA y Agentes', en: 'AI & Agents', act: 'scroll', to: '#demo' }, { es: 'Quiero cotizar', en: 'Get a quote', act: 'scroll', to: '#contacto' }] },
     demo: { expr: 'happy', es: 'Prueba nuestros agentes en accion! Cada uno resuelve problemas reales de negocio 24/7.', en: 'Try our agents in action! Each one solves real business problems 24/7.',
         opts: [{ es: 'Quiero mi agente', en: 'I want my agent', act: 'url', to: 'https://agentes.dcmsystem.co' }, { es: 'Agendar demo', en: 'Schedule demo', act: 'url', to: 'https://cal.com/dcmsystem' }] },
-    impacto: { expr: 'proud', es: '40% menos tiempos operativos, proyectos como ID Digital y Zutrix en produccion mundial!', en: '40% less operational time, projects like ID Digital and Zutrix running worldwide!',
+    impacto: { expr: 'proud', es: '40% menos tiempos operativos. Proyectos como Cannon (Colombia y Las Vegas) y ZUTRICS-PROCAPS en producción!', en: '40% less operational time. Projects like Cannon (Colombia & Las Vegas) and ZUTRICS-PROCAPS live in production!',
         opts: [{ es: 'Quiero resultados asi', en: 'I want results like these', act: 'scroll', to: '#contacto' }] },
     contacto: { expr: 'listening', es: 'Excelente! Llena el formulario o agendemos una videollamada.', en: 'Great! Fill the form or let\'s schedule a video call.',
         opts: [{ es: 'Videollamada', en: 'Video call', act: 'url', to: 'https://cal.com/dcmsystem' }, { es: 'WhatsApp', en: 'WhatsApp', act: 'url', to: 'https://wa.me/573013685757' }] }
@@ -495,10 +495,28 @@ function trackEyes() {
     // Natural blink at random intervals
     function blink() {
         const eyes = document.getElementById('robot-eyes');
-        if (eyes) gsap.to(eyes, { scaleY: 0.08, transformOrigin: 'center 42px', duration: 0.06, yoyo: true, repeat: 1 });
+        if (eyes) {
+            gsap.killTweensOf(eyes, 'scaleY');
+            gsap.to(eyes, {
+                scaleY: 0.08,
+                transformOrigin: 'center 42px',
+                duration: 0.06,
+                yoyo: true,
+                repeat: 1,
+                onComplete: () => gsap.set(eyes, { scaleY: 1, transformOrigin: 'center 42px' })
+            });
+        }
         setTimeout(blink, 3000 + Math.random() * 4000);
     }
     setTimeout(blink, 2000);
+
+    // Recover eyes if tab was backgrounded and blink got stuck
+    document.addEventListener('visibilitychange', () => {
+        if (!document.hidden) {
+            const eyes = document.getElementById('robot-eyes');
+            if (eyes) gsap.set(eyes, { scaleY: 1, transformOrigin: 'center 42px' });
+        }
+    });
 }
 
 // ===================== SECTION TRACKING =====================
