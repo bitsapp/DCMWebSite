@@ -15,11 +15,27 @@ export function initNavigation() {
             navLinks.classList.toggle('active');
         });
 
-        // Close on link click
-        links.forEach(link => link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navLinks.classList.remove('active');
-        }));
+        // Close mobile menu before scroll so navbar doesn't cover section
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+                if (!href || !href.startsWith('#')) return;
+
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+
+                const target = document.querySelector(href);
+                if (!target) return;
+
+                e.preventDefault();
+                // Espera al cierre del menú antes de scrollear
+                setTimeout(() => {
+                    const offset = 100;
+                    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+                    window.scrollTo({ top, behavior: 'smooth' });
+                }, 50);
+            });
+        });
     }
 
     // Language Toggle
