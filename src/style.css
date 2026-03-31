@@ -1838,6 +1838,31 @@ a {
     height: 30px;
     margin-bottom: 1rem;
     pointer-events: auto;
+    width: auto;
+}
+
+.footer-logo-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+    pointer-events: auto;
+    text-decoration: none;
+}
+
+.footer-logo-icon {
+    height: 34px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.25));
+    border-radius: 50%;
+}
+
+.footer-logo-text {
+    height: 18px;
+    width: auto;
+    object-fit: contain;
+    opacity: 0.85;
 }
 
 .footer-brand p {
