@@ -220,7 +220,10 @@ let isMoving = false;
 
 // ===================== INIT =====================
 export function initRobot() {
-    if (window.innerWidth < 768) return;
+    if (window.innerWidth < 768) {
+        initMobileRobot();
+        return;
+    }
     createDOM();
     robotEl = document.getElementById('dcm-robot');
     if (!robotEl) return;
@@ -232,15 +235,68 @@ export function initRobot() {
 
     startPhysicsLoop();
     trackEyes();
+    startBlink();
     trackSections();
     setupChat();
 
     // Auto-greeting after 5s
     setTimeout(() => {
         if (!chatOpen) showTooltip(getLang() === 'en' ? 'Hey! Click me!' : 'Hey! Hazme click!');
-        // Little excited bounce
         gsap.to(robotEl, { y: '-=20', duration: 0.2, yoyo: true, repeat: 5, ease: 'sine.inOut' });
     }, 5000);
+}
+
+// ===================== MOBILE ROBOT (simplified — no physics) =====================
+function initMobileRobot() {
+    createDOM();
+    robotEl = document.getElementById('dcm-robot');
+    if (!robotEl) return;
+
+    // Fixed bottom-left, no top positioning (physics driven)
+    robotEl.classList.add('mobile-mode');
+
+    // Gentle idle breathing animation only
+    gsap.to(robotEl, {
+        y: -6, duration: 1.8, yoyo: true, repeat: -1,
+        ease: 'sine.inOut'
+    });
+
+    // Blink still works on mobile
+    startBlink();
+
+    trackSections();
+    setupChat();
+
+    // Auto-greeting after 4s
+    setTimeout(() => {
+        if (!chatOpen) showTooltip(getLang() === 'en' ? 'Hey! Tap me!' : 'Hey! Tócame!');
+    }, 4000);
+}
+
+function startBlink() {
+    function blink() {
+        const eyes = document.getElementById('robot-eyes');
+        if (eyes) {
+            gsap.killTweensOf(eyes, 'scaleY');
+            gsap.to(eyes, {
+                scaleY: 0.08,
+                transformOrigin: 'center 42px',
+                duration: 0.06,
+                yoyo: true,
+                repeat: 1,
+                onComplete: () => gsap.set(eyes, { scaleY: 1, transformOrigin: 'center 42px' })
+            });
+        }
+        setTimeout(blink, 3000 + Math.random() * 4000);
+    }
+    setTimeout(blink, 2000);
+
+    document.addEventListener('visibilitychange', () => {
+        if (!document.hidden) {
+            const eyes = document.getElementById('robot-eyes');
+            if (eyes) gsap.set(eyes, { scaleY: 1, transformOrigin: 'center 42px' });
+        }
+    });
 }
 
 // ===================== PHYSICS LOOP — Fluid & Innovative =====================
@@ -491,32 +547,6 @@ function trackEyes() {
         requestAnimationFrame(updateEyes);
     }
     updateEyes();
-
-    // Natural blink at random intervals
-    function blink() {
-        const eyes = document.getElementById('robot-eyes');
-        if (eyes) {
-            gsap.killTweensOf(eyes, 'scaleY');
-            gsap.to(eyes, {
-                scaleY: 0.08,
-                transformOrigin: 'center 42px',
-                duration: 0.06,
-                yoyo: true,
-                repeat: 1,
-                onComplete: () => gsap.set(eyes, { scaleY: 1, transformOrigin: 'center 42px' })
-            });
-        }
-        setTimeout(blink, 3000 + Math.random() * 4000);
-    }
-    setTimeout(blink, 2000);
-
-    // Recover eyes if tab was backgrounded and blink got stuck
-    document.addEventListener('visibilitychange', () => {
-        if (!document.hidden) {
-            const eyes = document.getElementById('robot-eyes');
-            if (eyes) gsap.set(eyes, { scaleY: 1, transformOrigin: 'center 42px' });
-        }
-    });
 }
 
 // ===================== SECTION TRACKING =====================
@@ -540,11 +570,13 @@ function changeSection(id) {
 
     robotEl.setAttribute('data-expression', ctx.expr);
 
-    // Excited bounce on section change
-    gsap.to(robotEl, {
-        scale: 1.15, duration: 0.15,
-        onComplete: () => gsap.to(robotEl, { scale: 1, duration: 0.4, ease: 'elastic.out(1, 0.4)' })
-    });
+    // Excited bounce on section change (skip on mobile to avoid layout jump)
+    if (!robotEl.classList.contains('mobile-mode')) {
+        gsap.to(robotEl, {
+            scale: 1.15, duration: 0.15,
+            onComplete: () => gsap.to(robotEl, { scale: 1, duration: 0.4, ease: 'elastic.out(1, 0.4)' })
+        });
+    }
 
     if (chatOpen) showContextChat(id);
 }
@@ -783,6 +815,30 @@ function injectStyles() {
 
     @media (prefers-reduced-motion: reduce) {
         .dcm-robot, .robot-body-svg, .thruster-spark { animation: none !important; transition: none !important; }
+    }
+
+    /* Mobile mode — fixed bottom-left, smaller, no physics */
+    .dcm-robot.mobile-mode {
+        top: auto !important;
+        bottom: 24px;
+        left: 12px;
+        width: 52px;
+        height: 74px;
+        transform: none !important;
+    }
+    .dcm-robot.mobile-mode .robot-chat {
+        bottom: 84px;
+        top: auto;
+        left: 0;
+        width: min(290px, calc(100vw - 24px));
+    }
+    .dcm-robot.mobile-mode .robot-tooltip {
+        bottom: 82px;
+        top: auto;
+        left: 58px;
+        font-size: 0.68rem;
+        max-width: calc(100vw - 90px);
+        white-space: normal;
     }
     `;
     document.head.appendChild(s);
