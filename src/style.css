@@ -674,7 +674,7 @@ a {
     border: 1px solid var(--border-glass);
     border-radius: var(--radius-lg);
     padding: 2.5rem;
-    transition: all 0.5s var(--ease-spring);
+    transition: all 0.3s var(--ease-spring);
     position: relative;
     overflow: hidden;
     box-shadow: var(--shadow-card);
@@ -844,7 +844,7 @@ a {
 .service-detail {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s var(--ease-out), opacity 0.3s ease;
+    transition: max-height 0.35s var(--ease-out), opacity 0.3s ease;
     opacity: 0;
 }
 
@@ -1132,7 +1132,7 @@ a {
     border-radius: 32px;
     padding: 10px;
     transform: perspective(800px) rotateY(0deg) rotateX(2deg);
-    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     box-shadow:
         0 30px 60px rgba(0, 0, 0, 0.5),
         0 0 40px rgba(59, 130, 246, 0.06),
@@ -1472,7 +1472,7 @@ a {
     stroke-dashoffset: 327;
     transform: rotate(-90deg);
     transform-origin: center;
-    transition: stroke-dashoffset 2s var(--ease-out);
+    transition: stroke-dashoffset 0.8s var(--ease-out);
     filter: drop-shadow(0 0 6px var(--glow-primary));
 }
 
